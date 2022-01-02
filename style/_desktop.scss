@@ -1,0 +1,273 @@
+.img-mobile {
+  display: none;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: auto;
+}
+
+/* ========================================================================== */
+/*                                    HEAD                                    */
+/* ========================================================================== */
+.head {
+  width: 100%;
+  padding: 3rem 6rem;
+
+  background-image: url(../images/desktop/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.tg-icon {
+  display: none;
+}
+/* ------------------------------- head-toggle ------------------------------ */
+.head-toggle {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  .tg-img {
+    min-width: 130px;
+    min-height: 40px;
+  }
+
+  .tg-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 400;
+      font-size: 1.1rem;
+
+      padding-bottom: 0.5rem;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background: white;
+        top: 100%;
+        transform: scale(0);
+        transform-origin: center;
+        transition: all 0.2s ease;
+        transition-delay: 0.2s;
+      }
+
+      &:hover::before {
+        transform: scale(1);
+      }
+    }
+  }
+}
+/* -------------------------------- head-tile ------------------------------- */
+.head-title {
+  margin: 5rem 0;
+  align-self: flex-start;
+  width: 32ch;
+  line-height: 1.1;
+  font-size: 1.3rem;
+  padding: 1rem;
+  border: 1px solid white;
+  text-align: left;
+  background: transparent;
+  color: white;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+}
+/* ========================================================================== */
+/*                                    SEC1                                    */
+/* ========================================================================== */
+.sec1 {
+  padding: 6rem 6rem 0 6rem;
+  background: white;
+  position: relative;
+  width: 100%;
+}
+/* ----------------------------------- img ---------------------------------- */
+.sec1-img {
+  width: 100%;
+  object-fit: cover;
+}
+/* ---------------------------------- title --------------------------------- */
+.sec1-title {
+  max-width: 55ch;
+  padding: 4rem;
+  padding-bottom: 0;
+  padding-right: 0;
+  width: 50%;
+
+  background: white;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+
+  h2 {
+    max-width: 20ch;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+
+  p {
+    font-size: 1.1rem;
+    opacity: 0.7;
+  }
+}
+/* ========================================================================== */
+/*                                    SEC2                                    */
+/* ========================================================================== */
+.sec2 {
+  width: 100%;
+  padding: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* ---------------------------------- title --------------------------------- */
+.sec2-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  button {
+    color: rgba(255, 255, 255, 0.98);
+    background: black;
+    padding: 0.3rem 2.2rem;
+    border: none;
+  }
+}
+/* ----------------------------------- img ---------------------------------- */
+.sec2-img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+
+  .img-destop {
+    position: relative;
+  }
+}
+/* ========================================================================== */
+/*                                    FOTT                                    */
+/* ========================================================================== */
+.footer {
+  padding: 2rem 6rem;
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ---------------------------------- link ---------------------------------- */
+.foot-menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+
+  .foot-menu-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 400;
+      font-size: 1.1rem;
+
+      padding-bottom: 0.5rem;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background: white;
+        top: 100%;
+        transform: scale(0);
+        transform-origin: center;
+        transition: all 0.2s ease;
+        transition-delay: 0.2s;
+      }
+
+      &:hover::before {
+        transform: scale(1);
+      }
+    }
+  }
+}
+/* ---------------------------- .foot-social-icon --------------------------- */
+.foot-social {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  /* ---------------------------------- icon ---------------------------------- */
+  .foot-social-icon {
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .icon-wrap {
+      padding-bottom: 0.5rem;
+      position: relative;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 5px;
+        background: wheat;
+        top: 100%;
+
+        transition: all 0.2s ease;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+    }
+  }
+  /* ---------------------------------- right --------------------------------- */
+  span {
+    color: white;
+    opacity: 0.7;
+  }
+}
