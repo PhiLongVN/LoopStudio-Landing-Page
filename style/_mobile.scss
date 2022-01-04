@@ -1,0 +1,284 @@
+@media screen and (max-width: 767.98px) {
+  .img-desktop {
+    display: none;
+  }
+
+  .img-mobile {
+    display: block;
+  }
+
+  /* ========================================================================== */
+  /*                                    HEAD                                    */
+  /* ========================================================================== */
+
+  .head {
+    padding: 3rem 2rem;
+    background-image: url(../images/mobile/image-hero.jpg);
+    background-size: 100%;
+    background-position: center center;
+  }
+
+  /* --------------------------------- toggle --------------------------------- */
+
+  // icon
+  .tg-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 6;
+
+    img {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+
+      &:nth-of-type(1) {
+        display: none;
+      }
+    }
+
+    &.active > img:nth-of-type(1) {
+      display: block;
+    }
+
+    &.active > img:nth-of-type(2) {
+      display: none;
+    }
+  }
+  .head-toggle {
+    //   menu
+    .tg-menu {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: black;
+      width: 100%;
+      min-height: 100vh;
+      transition: 0.3s all ease;
+
+      position: absolute;
+      left: -100%;
+      top: 0%;
+      z-index: 3;
+
+      a {
+        font-weight: 100;
+        align-self: flex-start;
+        margin-left: 2rem;
+        text-transform: uppercase;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 5px;
+          background: white;
+          top: 100%;
+          transform: scale(0);
+          transform-origin: right;
+          transition: all 0.2s ease;
+          transition-delay: 0.2s;
+        }
+      }
+
+      &.active {
+        left: 0%;
+      }
+    }
+  }
+
+  //   logo
+  .tg-img {
+    min-width: unset;
+    min-height: unset;
+  }
+
+  /* ---------------------------------- title --------------------------------- */
+  .head-title {
+    max-width: min-content;
+    font-size: 1rem;
+
+    h1 {
+      width: min-content;
+    }
+  }
+  /* ========================================================================== */
+  /*                                    SEC1                                    */
+  /* ========================================================================== */
+  .sec1 {
+    padding: 2rem;
+    padding-bottom: 0;
+
+    //   title
+    .sec1-title {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      padding: 2rem;
+
+      right: 0%;
+
+      h2 {
+        margin: auto;
+      }
+
+      p {
+        padding: 1rem;
+      }
+    }
+  }
+
+  /* ========================================================================== */
+  /*                                    SEC2                                    */
+  /* ========================================================================== */
+
+  .sec2 {
+    padding: 2rem;
+    padding-bottom: 10rem;
+    position: relative;
+  }
+
+  //   title
+  .sec2-title {
+    h2 {
+      width: 100%;
+      text-align: center;
+      font-weight: 100;
+    }
+
+    button {
+      position: absolute;
+      color: black;
+      background: white;
+      border: 2px solid black;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 2%;
+      padding: 0.5rem 3rem;
+      z-index: 5;
+
+      &:hover {
+        background: rgba(220, 215, 215, 0.592);
+      }
+    }
+  }
+
+  //   img
+  .sec2-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+
+    .img-mobile {
+      position: relative;
+
+      img {
+        filter: brightness(80%);
+      }
+
+      .title-img {
+        position: absolute;
+        top: 60%;
+        left: 10%;
+
+        width: 9ch;
+        text-shadow: 1px 2px 8px black;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 100;
+        opacity: 0.9;
+      }
+
+      .grid {
+        width: 4ch;
+      }
+    }
+  }
+
+  /* ========================================================================== */
+  /*                                    FOOT                                    */
+  /* ========================================================================== */
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .foot-menu {
+    //   img
+    img {
+      align-self: center;
+      padding-bottom: 1rem;
+    }
+    // link
+    .foot-menu-link {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  //   foot-icon
+  .foot-social {
+    align-items: center;
+
+    // icon
+    .foot-social-icon {
+      align-self: center;
+    }
+    // rights
+    span {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  /* ========================================================================== */
+  /*                                    SEC2                                    */
+  /* ========================================================================== */
+
+  /* ----------------------------------- img ----------------------------------- */
+  .sec2-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+
+    .img-mobile {
+      position: relative;
+
+      img {
+        filter: brightness(80%);
+      }
+
+      .title-img {
+        position: absolute;
+        top: unset;
+        bottom: 15spx;
+        left: 10%;
+
+        width: 9ch;
+        text-shadow: 1px 2px 8px black;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 100;
+        opacity: 0.9;
+      }
+
+      .grid {
+        width: 4ch;
+      }
+    }
+  }
+}
