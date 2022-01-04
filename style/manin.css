@@ -773,4 +773,19 @@ picture {
     width: 4ch;
   }
 }
+
+@media screen and (max-width: 319px) {
+  /* ========================================================================== */
+  /*                                    HEAD                                    */
+  /* ========================================================================== */
+  .head {
+    padding: 2rem 1rem;
+  }
+  .head-title {
+    padding: 0.5rem;
+  }
+  .head-title h1 {
+    font-size: 1.8rem;
+  }
+}
 /*# sourceMappingURL=manin.css.map */
